@@ -247,6 +247,7 @@ class View extends React.Component {
     const { createRoom, createConvo, removeUserFromRoom } = this.actions
 
     return (
+      <>
       <main>
         <aside data-open={sidebarOpen}>
           <UserHeader user={user} />
@@ -289,6 +290,7 @@ class View extends React.Component {
           )}
         </section>
       </main>
+      </>
     )
   }
 }
